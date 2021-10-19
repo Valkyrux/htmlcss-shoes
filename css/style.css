@@ -1,3 +1,4 @@
+/* start-set */
 * {
     margin: 0;
     padding: 0;
@@ -10,19 +11,19 @@ html {
     font-weight: 900;
     scroll-behavior: smooth;
 }
-
+/* header position */
 header {
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1;
 }
-
+/* set-pages */
 .page {
-    list-style-type: none;
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 #first-page {
@@ -36,20 +37,20 @@ header {
 #third-page {
     background-color: yellow;
 }
-
+/* scroll-buttons */
 a {
-    text-decoration: none;
     display: block;
-    float: left;
     height: 40px;
     width: 40px;
     border-radius: 50%;
     margin: 10px 30px;
     background-color: white;
+    text-decoration: none;
     text-align: center;
     line-height: 40px;
     font-size: 30px;
     color: black;
+    float: left;
 }
 
 header a:last-of-type {
@@ -59,9 +60,9 @@ header a:last-of-type {
 a:hover{
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
-
+/* content-layout */
 .content {
-    width: 40%;
+    height: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,14 +70,14 @@ a:hover{
 }
 
 .content img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
-    display: block;
 }
-
+/* text */
 h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     text-transform: uppercase;
     color: yellow;
 }
@@ -84,4 +85,3 @@ h1 {
 .page:last-of-type h1 {
     color: green;
 }
-
