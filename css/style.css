@@ -62,7 +62,7 @@ a:hover{
 }
 /* content-layout */
 .content {
-    height: 50%;
+    width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -77,9 +77,12 @@ a:hover{
 }
 /* text */
 h1 {
-    font-size: 2.5em;
+    font-size: 7vh;
     text-transform: uppercase;
     color: yellow;
+    line-height: 6vh;
+    text-align: center;
+    letter-spacing: 0.08em;
 }
 
 .page:last-of-type h1 {
