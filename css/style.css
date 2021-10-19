@@ -2,23 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-user-select: none;
 }
 
 html {
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
+    scroll-behavior: smooth;
 }
 
 header {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 1;
 }
 
 .page {
     list-style-type: none;
     width: 100%;
     height: 100vh;
+    position: relative;
 }
 
 #first-page {
@@ -51,3 +55,29 @@ a {
 header a:last-of-type {
     margin-right: 10px;
 }
+
+.content {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: yellow;
+}
+
+.page:last-of-type h1 {
+    color: green;
+}
+
